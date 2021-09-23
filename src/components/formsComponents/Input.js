@@ -4,10 +4,6 @@ import { string, func, number } from 'prop-types';
 function Input(props) {
   const { name, type, value, handleChange, label } = props;
 
-  const setPropTypes = () => {
-
-  }
-
   return (
     <label htmlFor={ name }>
       { label }
