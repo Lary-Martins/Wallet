@@ -7,7 +7,8 @@ export {
 export {
   LOGIN,
   addUser,
-} from './signIn';
+} from './singIn';
+
 export {
   REMOVE_EXPENSES,
   removeExpenses,

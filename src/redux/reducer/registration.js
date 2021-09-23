@@ -6,16 +6,12 @@ const INITIAL_STATE = {
 
 const registration = (state = INITIAL_STATE, action) => {
   const { type, email } = action;
-  switch (type) {
-  case LOGIN:
+  if (type === LOGIN) {
     return {
       ...state,
       email,
     };
-
-  default:
-    return state;
-  }
+  } return state;
 };
 
 export default registration;
