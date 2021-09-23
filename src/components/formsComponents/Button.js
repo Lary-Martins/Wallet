@@ -9,7 +9,7 @@ function Button(props) {
       onClick={ submit }
       disabled={ disabled }
     >
-      { label }
+      {label}
     </button>
   );
 }
