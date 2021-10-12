@@ -1,6 +1,6 @@
-export const REMOVE_EXPENSES = 'REMOVE_EXPENSES';
+export const REMOVE_EXPENSE = 'REMOVE_EXPENSE';
 
-export const removeExpenses = (id) => ({
-  type: REMOVE_EXPENSES,
+export const removeExpense = (id) => ({
+  type: REMOVE_EXPENSE,
   id,
 });
