@@ -2,11 +2,11 @@ import React from 'react';
 import { string, func, bool } from 'prop-types';
 
 function Button(props) {
-  const { label, submit, disabled } = props;
+  const { label, handleClick, disabled } = props;
   return (
     <button
       type="button"
-      onClick={ submit }
+      onClick={ handleClick }
       disabled={ disabled }
     >
       {label}
@@ -21,7 +21,7 @@ Button.defaultProps = {
 Button.propTypes = {
   disabled: bool,
   label: string.isRequired,
-  submit: func.isRequired,
+  handleClick: func.isRequired,
 };
 
 export default Button;
