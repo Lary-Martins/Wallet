@@ -1,8 +1,8 @@
 import React from 'react';
-import { string, func, number } from 'prop-types';
+import { string, func } from 'prop-types';
 
 function Input(props) {
-  const { name, type, value, handleChange, label } = props;
+  const { name, type, value, handleChange, label, src } = props;
 
   return (
     <label htmlFor={ name }>
@@ -11,6 +11,7 @@ function Input(props) {
         id={ name }
         type={ type }
         name={ name }
+        src={ src }
         value={ value }
         onChange={ handleChange }
       />
@@ -18,11 +19,16 @@ function Input(props) {
   );
 }
 
+Input.defaultProps = {
+  src: null,
+};
+
 Input.propTypes = {
+  src: string,
   name: string.isRequired,
   type: string.isRequired,
   label: string.isRequired,
-  value: number.isRequired,
+  value: string.isRequired,
   handleChange: func.isRequired,
 };
 
