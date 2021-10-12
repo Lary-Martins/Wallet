@@ -46,7 +46,7 @@ function Login() {
         handleChange={ handleChange }
       />
       <Button
-        submit={ handleSubmit }
+        handleClick={ handleSubmit }
         label="Entrar"
         disabled={ validation }
       />
