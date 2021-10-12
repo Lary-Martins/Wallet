@@ -10,9 +10,19 @@ export {
 } from './singIn';
 
 export {
-  REMOVE_EXPENSES,
-  removeExpenses,
+  REMOVE_EXPENSE,
+  removeExpense,
 } from './removeExpense';
+
+export {
+  EXPENSE_DETAILS,
+  expenseDetails,
+} from './expenseDetail';
+
+export {
+  EDIT_EXPENSE,
+  editExpense,
+} from './editExpense';
 
 export {
   FETCH_SUCCESS_COINS,
