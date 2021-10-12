@@ -5,9 +5,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
-        "prettier",
-        "prettier/react"
+        "plugin:sonarjs/recommended",
+        "airbnb"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -18,10 +17,9 @@
     },
     "plugins": [
         "react",
-        "prettier"
+        "sonarjs"
     ],
     "rules": {
-    "prettier/prettier": "error",
     "indent": ["error", 2],
     "linebreak-style": 0,
     "quotes": ["error", "single"],
