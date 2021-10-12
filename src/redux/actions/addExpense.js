@@ -5,6 +5,7 @@ const END_POINT = 'https://economia.awesomeapi.com.br/json/all';
 
 const getCurrentSuccessCase = (payload) => ({
   type: FETCH_SUCCESS_CURRENT,
+  edit: false,
   payload,
 });
 
